@@ -12,7 +12,7 @@ const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post("http://localhost:3089/api/auth/login", {
+      const res = await axios.post("https://dreams-to-do-backend.vercel.app/api/auth/login", {
         name,
         password,
       });
