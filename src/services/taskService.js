@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API = "http://localhost:3089/api/task";
+const API = "https://dreams-to-do-backend.vercel.app/api/task";
 
 export const getTasks = (token) =>
   axios.get(API, { headers: { Authorization: `Bearer ${token}` } });
